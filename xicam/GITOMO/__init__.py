@@ -4,15 +4,13 @@ from qtpy.QtCore import *
 from qtpy.QtGui import *
 from qtpy.QtWidgets import *
 
-from xicam.core.data import load_header, NonDBHeader
-from xicam.core.execution.workflow import Workflow
+from xicam.core.data import NonDBHeader
 from xicam.core import msg
 import distributed
 
-from xicam.plugins import GUIPlugin, GUILayout, manager as pluginmanager
-from xicam.plugins.GUIPlugin import PanelState
+from xicam.plugins import GUIPlugin, GUILayout
 
-from xicam.gui.threads import QThreadFuture, QThreadFutureIterator
+from xicam.core.threads import QThreadFutureIterator
 from xicam.gui.widgets.tabview import TabView
 from xicam.gui.widgets.linearworkfloweditor import WorkflowEditor
 
